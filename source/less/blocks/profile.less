@@ -1,0 +1,98 @@
+.person {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 10% 0 10%;
+}
+
+.person__list {
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+.person__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.person__info-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  @media (max-width: 320px) {
+    flex-wrap: wrap;
+  }
+}
+
+.person__photo {
+  width: 25%;
+
+  @media (max-width: 320px) {
+    width: 90%;
+  }
+}
+
+.person__skill {
+  border-radius: 20px;
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  background-color: #F3F3F3;
+  padding-top: 10px;
+}
+
+.search__subject--person {
+  transform: translateX(calc(100% - 60%));
+
+  @media (max-width: 320px) {
+    transform: translateX(0);
+  }
+}
+
+.person__skill-title {
+  font-size: 25px;
+}
+
+.person__description {
+  padding: 0 10% 0 10%;
+  font-size: 20px;
+}
+
+.person__info {
+  text-align: center;
+}
+
+.person__skills-info {
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media (max-width: 320px) {
+    flex-wrap: wrap;
+  }
+}
+
+.person__skills-title {
+  text-align: center;
+}
+
+.person__skills-wrapper {
+  flex-grow: 2;
+}
+
+.person__button {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  color: #ffff;
+  padding: 20px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(246,203,31);
+  background: linear-gradient(90deg, rgba(246,203,31,0.8830882694874825) 15%, rgba(244,228,53,0.9054972330729166) 75%);
+  height: 75px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="img/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple.webp">
+  <title>Поиск</title>
+</head>
+  <body class="main-body">
+    <header class="main-header">
+      <h1 class="main-header__heading">fto</h1>
+      <a class="default" href="profile.html">
+        <div class="main-header__profile">
+          <h2 class="main-header__username">ИЛЬЯ</h2>
+          <img class="main-header__photo" src="img/profile.jpg" alt="фото">
+        </div>
+      </a>
+    </header>
+    <section class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item"><a class="default" href="community.html">СООБЩЕСТВО</a></li>
+        <li class="main-menu__item"><a class="default" href="applications.html">ПОИСК</a></li>
+        <li class="main-menu__item main-menu__item--active"><a class="default" href="search.html">ЧАТ</a></li>
+      </ul>
+    </section>
+    <main>
+      <section class="search">
+      <h4 class="search__title">Фильтры поиска</h4>
+        <h4 class="search__subject-title">Предмет:</h4>
+        <ul class="search__subjects-list">
+          <li class="search__subject">МАТЕМАТИКА</li>
+          <li class="search__subject">РУССКИЙ ЯЗЫК</li>
+          <li class="search__subject">ХИМИЯ</li>
+          <li class="search__subject">ФИЗИКА</li>
+          <li class="search__subject">ОБЩЕСТВОЗНАНИЕ</li>
+          <li class="search__subject">ЛИТЕРАТУРА</li>
+        </ul>
+        <div class="search__container">
+          <div>
+            <label for="region">
+              Регион:
+            </label>
+            <input class="search__input search__input--region" type="text" placeholder="Страна, город или населнный пункт" name="region" id="region">
+          </div>
+          <div>
+            <label for="age" class="search__age-title">
+              Возраст:
+            </label>
+            <input class="search__input" type="number" placeholder="Возраст собеседника" name="age" id="age">
+          </div>
+          <input type="submit" value="Найти">
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

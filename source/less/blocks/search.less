@@ -1,0 +1,80 @@
+.search {
+  display: block;
+  width: 70%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 20px;
+
+  @media (max-width: @mobile-width) {
+    width: 100%;
+    margin: 0 10% 0 10%;
+  }
+}
+
+.search__title {
+  font-size: 24px;
+  color: #A4A3A3;
+}
+
+.search__subject {
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+  align-items: center;
+}
+
+.search__subject-title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+
+  @media (max-width: 320px) {
+    text-align: center;
+  }
+}
+
+.search__subject-photo {
+  width: 4vw;
+  margin: 0 20px 0 0;
+}
+
+.search__subjects-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search__subject {
+  border-radius: 10px;
+}
+
+.search__age-title {
+  margin-left: 100px;
+}
+
+.search__container {
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: @mobile-width) {
+    flex-wrap: wrap;
+  }
+}
+
+.search__input {
+  width: 250px;
+  font-size: 20px;
+}
+
+.search__input--region {
+  width: 350px;
+
+  @media (max-width: @mobile-width) {
+    width: 80%;
+  }
+}
+
+.search__label {
+  font-size: 23px;
+}

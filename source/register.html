@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="img/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple.webp">
+  <title>Регистрация</title>
+</head>
+<body class="main-body">
+  <header class="main-header">
+    <h1 class="main-header__heading">союз-тайфун</h1>
+    <div class="main-header__profile">
+      <h2 class="main-header__username">ИЛЬЯ</h2>
+      <img class="main-header__photo" src="img/profile.jpg" alt="фото">
+    </div>
+  </header>
+  <form class="registration-form" method="post" action="fuvk">
+    <div class="registration-form__container">
+      <label for="title">
+        Ваше имя
+      </label>
+      <input class="registration-form__input" type="text" name="title" id="title">
+    </div>
+    <div class="registration-form__container">
+      <label for="date">
+        Дата рождения
+      </label>
+      <input class="registration-form__input" type="date" name="deadline" id="date">
+    </div>
+    <div class="registration-form__container">
+      <label for="photo">
+        Фото профиля:
+      </label>
+      <input type="file" value="Выбрать фото" id="photo" name="photo">
+    </div class="registration-form__container">
+    <div class="registration-form__container v__container--description">
+      <label for="description">
+        Расскажите о себе
+      </label>
+      <textarea class="registration-form__textarea" name="description" id="description" placeholder="Чем подробнее будет ваше описание, тем больше людей захотят с Вами сотрудничать!"></textarea>
+    </div>
+    <div class="registration-form__container registration-form__container--subjects">
+      <h4 class="registration-form__subjects-title">
+        Предметы,  в которых Вы сильны:
+      </h4>
+      <div>
+        <input type="checkbox" id="math" name="math"
+               checked>
+        <label for="math">Математика</label>
+
+        <input type="checkbox" id="russian" name="russian"
+               checked>
+        <label for="russian">Русский язык</label>
+
+        <input type="checkbox" id="english" name="english"
+               checked>
+        <label for="english">Английский язык</label>
+    </div>
+    </div>
+    <div class="registration-form__container registration-form__container--subjects">
+      <h4 class="registration-form__subjects-title">
+        Предметы, в которых хотите разобраться:
+      </h4>
+      <input type="checkbox" id="learn_math" name="math"
+             checked>
+      <label for="math">Математика</label>
+
+      <input type="checkbox" id="learn_russian" name="russian"
+             checked>
+      <label for="russian">Русский язык</label>
+
+      <input type="checkbox" id="learn_english" name="english"
+             checked>
+      <label for="english">Английский язык</label>
+    </div>
+    <input type="submit" value="Зарегистрироваться">
+  </form>
+</body>
+</html>
